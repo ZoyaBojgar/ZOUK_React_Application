@@ -8,7 +8,6 @@ const Shop = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [cart, setCart] = useState([]);
 
   const filteredProducts = products.filter(
     (product) => product.category === selectedCategory
@@ -31,6 +30,11 @@ const Shop = () => {
   const handleAddToCart = (product) => {
     addToCart(product);
     toast.success(`${product.name} added to cart!`);
+  };
+
+  const handleBuy = () => {
+    toast.success("Your order has been placed!");
+    setSelectedProduct(null);
   };
 
   return (
@@ -167,7 +171,9 @@ const Shop = () => {
             <button
               onClick={() => setSelectedProduct(null)}
               className="absolute top-2 right-4 text-gray-500 text-2xl hover:text-gray-700"
-            ></button>
+            >
+              ✕
+            </button>
             <img
               src={selectedProduct.image}
               alt={selectedProduct.name}
@@ -184,12 +190,18 @@ const Shop = () => {
               {selectedProduct.price}
             </p>
 
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-3">
               <button
                 onClick={() => handleAddToCart(selectedProduct)}
                 className="px-4 py-2 rounded text-white bg-[#8F87F1] hover:bg-[#7a6df5] transition"
               >
                 Add to Cart
+              </button>
+              <button
+                onClick={handleBuy}
+                className="px-4 py-2 rounded text-white bg-green-500 hover:bg-green-600 transition"
+              >
+                Buy
               </button>
               <button
                 onClick={() => {
