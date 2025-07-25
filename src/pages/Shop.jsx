@@ -199,16 +199,16 @@ const Shop = () => {
               </button>
               <button
                 onClick={handleBuy}
-                className="px-4 py-2 rounded text-white bg-green-500 hover:bg-green-600 transition"
+                className="px-4 py-2 rounded text-[#8F87F1] bg-white border border-[#8F87F1] hover:bg-gray-100 transition"
               >
-                Buy
+                Buy Now
               </button>
               <button
                 onClick={() => {
                   setSelectedProduct(null);
                   window.scrollTo({ top: 300, behavior: "smooth" });
                 }}
-                className="px-4 py-2 rounded text-[#8F87F1] bg-white border border-[#8F87F1] hover:bg-gray-100 transition"
+                className="px-4 py-2 rounded text-white bg-[#8F87F1] hover:bg-[#7a6df5] transition"
               >
                 Go Back to Product
               </button>

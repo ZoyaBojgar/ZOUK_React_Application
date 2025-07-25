@@ -1,7 +1,13 @@
 import { useCart } from "../components/CartContext";
+import { toast } from "react-toastify";
 
 const Cart = () => {
   const { cart, removeFromCart, clearCart } = useCart();
+
+  const handleBuyNow = (itemId) => {
+    toast.success("Your order has been placed!");
+    removeFromCart(itemId);
+  };
 
   return (
     <div className="min-h-screen bg-purple-50 px-6 py-10">
@@ -16,7 +22,7 @@ const Cart = () => {
           {cart.map((item, index) => (
             <div
               key={index}
-              className="flex items-center justify-between bg-white p-4 rounded-xl shadow"
+              className="flex flex-col sm:flex-row sm:items-center sm:justify-between bg-white p-4 rounded-xl shadow gap-4"
             >
               <div className="flex items-center gap-4">
                 <img
@@ -29,12 +35,21 @@ const Cart = () => {
                   <p className="text-[#8F87F1] font-medium">{item.price}</p>
                 </div>
               </div>
-              <button
-                onClick={() => removeFromCart(item.id)}
-                className="text-sm text-red-500 hover:underline"
-              >
-                Remove
-              </button>
+              <div className="flex gap-3 justify-end sm:justify-start">
+                <button
+                  onClick={() => handleBuyNow(item.id)}
+                  className="text-sm bg-green-500 text-white px-4 px-4 py-2 rounded text-[#8F87F1] bg-white border border-[#8F87F1] hover:bg-gray-100 transition"
+                >
+                  Buy Now
+                </button>
+                
+                <button
+                  onClick={() => removeFromCart(item.id)}
+                  className="text-sm text-red-500 hover:underline"
+                >
+                  Remove
+                </button>
+              </div>
             </div>
           ))}
 
