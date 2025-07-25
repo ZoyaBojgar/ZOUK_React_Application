@@ -193,13 +193,13 @@ const Shop = () => {
             <div className="flex flex-wrap gap-3">
               <button
                 onClick={() => handleAddToCart(selectedProduct)}
-                className="px-4 py-2 rounded text-white bg-[#8F87F1] hover:bg-[#7a6df5] transition"
+                className="px-4 py-2 rounded text-[#8F87F1] bg-white border border-[#8F87F1] hover:bg-gray-100 transition"
               >
                 Add to Cart
               </button>
               <button
                 onClick={handleBuy}
-                className="px-4 py-2 rounded text-[#8F87F1] bg-white border border-[#8F87F1] hover:bg-gray-100 transition"
+                className="px-4 py-2 rounded text-white bg-[#8F87F1] hover:bg-[#7a6df5] transition"
               >
                 Buy Now
               </button>
@@ -208,7 +208,7 @@ const Shop = () => {
                   setSelectedProduct(null);
                   window.scrollTo({ top: 300, behavior: "smooth" });
                 }}
-                className="px-4 py-2 rounded text-white bg-[#8F87F1] hover:bg-[#7a6df5] transition"
+                className="px-4 py-2 rounded text-[#8F87F1] bg-white border border-[#8F87F1] hover:bg-gray-100 transition"
               >
                 Go Back to Product
               </button>

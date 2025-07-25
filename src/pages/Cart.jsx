@@ -38,11 +38,11 @@ const Cart = () => {
               <div className="flex gap-3 justify-end sm:justify-start">
                 <button
                   onClick={() => handleBuyNow(item.id)}
-                  className="text-sm bg-green-500 text-white px-4 px-4 py-2 rounded text-[#8F87F1] bg-white border border-[#8F87F1] hover:bg-gray-100 transition"
+                  className="text-sm text-white bg-[#8F87F1] hover:bg-[#7a6df5] transition"
                 >
                   Buy Now
                 </button>
-                
+
                 <button
                   onClick={() => removeFromCart(item.id)}
                   className="text-sm text-red-500 hover:underline"
