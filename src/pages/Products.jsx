@@ -7,7 +7,7 @@ const Products = () => {
 
   return (
     <div>
-      <section className="px-4 py-10 mt-15 md:px-12 lg:px-20 max-w-screen-xl mx-auto">
+      <section className="px-2 py-10 mt-15 md:px-12 lg:px-20 max-w-screen-xl mx-auto">
         <div className="text-center mb-10">
           <p
             className="text-sm uppercase text-[#8F87F1] font-medium mb-8 hover:cursor-pointer "

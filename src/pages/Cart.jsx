@@ -40,7 +40,7 @@ const Cart = () => {
 
           <button
             onClick={clearCart}
-            className="w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600 transition"
+            className="w-full bg-[#8F87F1] text-white py-2 rounded-lg hover:bg-red-600 transition"
           >
             Clear Cart
           </button>
