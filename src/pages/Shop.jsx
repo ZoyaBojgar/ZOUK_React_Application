@@ -43,7 +43,7 @@ const Shop = () => {
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-bold text-[#8F87F1] text-center mb-[-20px]"
+        className="text-4xl font-bold text-[#8F87F1] text-center mb-[-20px] "
       >
         Shop Now
       </motion.h1>
@@ -92,7 +92,7 @@ const Shop = () => {
             </h2>
             <button
               onClick={() => setSelectedCategory(null)}
-              className="px-4 py-2 text-sm text-[#8F87F1] bg-white font-medium rounded hover:bg-gray-200 transition"
+              className="px-4 py-2 text-sm text-[#8F87F1] bg-white font-medium rounded hover:bg-gray-200 transition cursor-pointer"
             >
               Back to Categories
             </button>
@@ -122,13 +122,13 @@ const Shop = () => {
                   <div className="flex gap-3 mt-3">
                     <button
                       onClick={() => handleAddToCart(item)}
-                      className="px-4 py-2 rounded text-white bg-[#8F87F1] hover:bg-[#7a6df5] transition"
+                      className="px-4 py-2 rounded text-white bg-[#8F87F1] hover:bg-[#7a6df5] transition cursor-pointer"
                     >
                       Add to Cart
                     </button>
                     <button
                       onClick={() => setSelectedProduct(item)}
-                      className="px-4 py-2 rounded text-[#8F87F1] bg-white border border-[#8F87F1] hover:bg-gray-100 transition"
+                      className="px-4 py-2 rounded text-[#8F87F1] bg-white border border-[#8F87F1] hover:bg-gray-100 transition cursor-pointer"
                     >
                       View Details
                     </button>
@@ -170,7 +170,7 @@ const Shop = () => {
           >
             <button
               onClick={() => setSelectedProduct(null)}
-              className="absolute top-2 right-4 text-gray-500 text-2xl hover:text-gray-700"
+              className="absolute top-2 right-4 text-gray-500 text-2xl hover:text-gray-700 cursor-pointer"
             >
               ✕
             </button>
@@ -193,7 +193,7 @@ const Shop = () => {
             <div className="flex flex-wrap gap-3">
               <button
                 onClick={() => handleAddToCart(selectedProduct)}
-                className="px-4 py-2 rounded text-[#8F87F1] bg-white border border-[#8F87F1] hover:bg-gray-100 transition"
+                className="px-4 py-2 rounded text-[#8F87F1] bg-white border border-[#8F87F1] hover:bg-gray-100 transition cursor-pointer"
               >
                 Add to Cart
               </button>
@@ -208,7 +208,7 @@ const Shop = () => {
                   setSelectedProduct(null);
                   window.scrollTo({ top: 300, behavior: "smooth" });
                 }}
-                className="px-4 py-2 rounded text-[#8F87F1] bg-white border border-[#8F87F1] hover:bg-gray-100 transition"
+                className="px-4 py-2 rounded text-[#8F87F1] bg-white border border-[#8F87F1] hover:bg-gray-100 transition cursor-pointer"
               >
                 Go Back to Product
               </button>

@@ -57,13 +57,13 @@ const Products = () => {
                 <p className="text-sm text-gray-600 mt-1">{item.desc}</p>
                 <div className="mt-4 flex gap-4 text-sm text-indigo-600">
                   <button
-                    className="hover:underline hover:text-[#8F87F1] transition duration-200"
+                    className="hover:underline hover:text-[#8F87F1] transition duration-200 cursor-pointer"
                     onClick={() => navigate("/shop")}
                   >
                     Shop
                   </button>
                   <button
-                    className="hover:underline hover:text-[#8F87F1] transition duration-200"
+                    className="hover:underline hover:text-[#8F87F1] transition duration-200 cursor-pointer"
                     onClick={() => navigate("/shop")}
                   >
                     View →

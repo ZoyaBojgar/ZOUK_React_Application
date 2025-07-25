@@ -107,7 +107,7 @@ const Signup = () => {
             type="submit"
             whileHover={{ scale: 1.05, x: 5 }}
             whileTap={{ scale: 0.95 }}
-            className="w-full bg-[#8F87F1] text-white py-2 rounded-lg font-semibold transition-transform "
+            className="w-full bg-[#8F87F1] text-white py-2 rounded-lg font-semibold transition-transform hover:cursor-pointer "
           >
             Sign Up
           </motion.button>
@@ -117,7 +117,7 @@ const Signup = () => {
           Already have an account?{" "}
           <NavLink
             to="/login"
-            className="text-[#8F87F1] font-semibold hover:underline "
+            className="text-[#8F87F1] font-semibold hover:underline cursor-pointer"
           >
             Log in
           </NavLink>

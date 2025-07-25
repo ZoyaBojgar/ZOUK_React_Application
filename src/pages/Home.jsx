@@ -30,7 +30,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => navigate("/shop")}
-                className="bg-[#8F87F1] hover:bg-[#7a6df5] text-white px-6 py-2 rounded-md text-sm font-medium shadow-lg transition duration-200"
+                className="bg-[#8F87F1] hover:bg-[#7a6df5] text-white px-6 py-2 rounded-md text-sm font-medium shadow-lg transition duration-200 cursor-pointer"
               >
                 Shop
               </motion.button>
@@ -39,7 +39,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => navigate("/about")}
-                className="border border-gray-400 hover:border-gray-600 text-gray-700 px-6 py-2 rounded-md text-sm font-medium shadow-sm transition duration-200"
+                className="border border-gray-400 hover:border-gray-600 text-gray-700 px-6 py-2 rounded-md text-sm font-medium shadow-sm transition duration-200 cursor-pointer"
               >
                 Learn More
               </motion.button>
@@ -109,14 +109,14 @@ export default function HeroSection() {
           >
             <button
               onClick={() => navigate("/shop")}
-              className="text-sm font-medium text-white px-4 py-2 rounded bg-[#8F87F1] hover:bg-[#7a6df5] transition"
+              className="text-sm font-medium text-white px-4 py-2 rounded bg-[#8F87F1] hover:bg-[#7a6df5] transition cursor-pointer"
             >
               Shop
             </button>
 
             <button
               onClick={() => navigate("/shop")}
-              className="text-sm font-medium text-black border border-gray-300 px-4 py-2 rounded hover:border-[#7a6df5] transition"
+              className="text-sm font-medium text-black border border-gray-300 px-4 py-2 rounded hover:border-[#7a6df5] transition cursor-pointer"
             >
               View →
             </button>

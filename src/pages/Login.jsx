@@ -85,7 +85,7 @@ const Login = () => {
             type="submit"
             whileHover={{ scale: 1.05, x: 4 }}
             whileTap={{ scale: 0.95 }}
-            className="w-full bg-[#8F87F1] text-white py-2 rounded-lg font-semibold transition-all"
+            className="w-full bg-[#8F87F1] text-white py-2 rounded-lg font-semibold transition-all hover:cursor-pointer"
           >
             Log In
           </motion.button>
@@ -95,7 +95,7 @@ const Login = () => {
           Don't have an account?{" "}
           <button
             onClick={handleSignupRedirect}
-            className="text-[#8F87F1] font-semibold hover:underline"
+            className="text-[#8F87F1] font-semibold hover:underline cursor-pointer"
           >
             Sign up
           </button>
