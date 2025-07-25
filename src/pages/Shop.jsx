@@ -199,7 +199,7 @@ const Shop = () => {
               </button>
               <button
                 onClick={handleBuy}
-                className="px-4 py-2 rounded text-white bg-[#8F87F1] hover:bg-[#7a6df5] transition"
+                className="px-4 py-2 rounded text-white bg-[#8F87F1] hover:bg-[#7a6df5] transition cursor-pointer"
               >
                 Buy Now
               </button>
